@@ -11,13 +11,14 @@ Snuper Test.
 2. npm run build
 3. npm run serve
 
-## Test
-Para ver nuestro sitio en test.
-
 ## Version
 1. react 15.4.2
 2. react-redux 5.0.2
 3. react-router 3.0.2
+
+
+## Test
+Para ver nuestro sitio en test.
 
 ➡️ **[Link Test](https://snuuper.herokuapp.com/
 )** 
