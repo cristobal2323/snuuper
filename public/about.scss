@@ -1,0 +1,11 @@
+.about{
+	background: $blanco;
+	.about_item{
+		@include content;
+		h3{
+			margin: 0;
+			text-transform: uppercase;
+			color: $link;
+		}
+	}
+}

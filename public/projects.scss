@@ -1,0 +1,96 @@
+.projects{
+	background: $blanco;
+	.projects_item{
+		@include content;
+		h3{
+			margin: 0 0 1em 0;
+			text-transform: uppercase;
+			color: $link;
+		}
+		.projects_btn{
+			display: flex;
+			margin-bottom: 2em;
+			justify-content: space-between;
+			button{
+				border: none;
+				background: $link;
+				color: $blanco;
+				width: 150px;
+				margin-top: 1em;
+				&.btnnone{
+					display: none;
+				}
+				&:hover{
+					background: tomato;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.projects_box{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		div{
+			&.projects_item_img{
+				width: 100%;
+			}
+			width: 32%;
+			position: relative;
+			padding: 1em;
+			background: $section;
+			margin-bottom: 1em;
+			@include vertical-tablet-down {
+				width: 100%;
+			}
+			a{
+				margin: 1em 0 0 0 ;
+				color: $link;
+				font-size: $fontRegular;
+				@include active-state{
+					color: $blanco;
+				}
+			}
+			img{
+				margin: auto;
+				width: 100%;
+				display: block;
+				margin: auto;
+				+ h4{
+					margin-top: 1em;
+				}
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				li{
+					font-size: $fontSmall;
+					font-weight: normal;
+					color: $blanco;
+				}
+			}
+			h4{
+				margin: 1em 0;
+				color: $link;
+				font-size: $fontRegular;
+			}
+			p{
+				color: $blanco;
+				font-size: $fontSmall;
+				margin: 0;
+			}
+			button{
+				border: none;
+				background: $link;
+				color: $blanco;
+				width: 150px;
+				margin-top: 1em;
+				&:hover{
+					background: tomato;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

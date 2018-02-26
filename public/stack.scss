@@ -1,0 +1,67 @@
+@mixin valor( $valor ) {
+    &:after{
+		content: "";
+		position: absolute;
+		width: $valor;
+		height: 2px;
+		background: $link;
+	}
+}
+
+.stack{
+	background: $section;
+	.stack_item{
+		@include content;
+		h3{
+			margin: 0;
+			text-transform: uppercase;
+			color: $link;
+		}
+	}
+	.stack_box{
+		display: flex;
+		flex-wrap: wrap;
+		color: $blanco;
+		justify-content: space-between;
+		.stack_box__stack{
+			width: 49%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding: 1em 0;
+			.stack_box__name{
+				width: 50%;
+			}
+			.stack_box__value{
+				width: 50%;
+				text-align: right;
+			}
+			.stack_box__color{
+				width: 100%;
+				span{
+					width: 100%;
+					position: relative;
+					display: block;
+					height: 2px;
+					margin: 1em 0 0 0;
+					background: $blanco;
+					&.val_100{ @include valor(100%)}
+					&.val_95{ @include valor(95%)}
+					&.val_90{ @include valor(90%)}
+					&.val_85{ @include valor(85%)}
+					&.val_80{ @include valor(80%)}
+					&.val_75{ @include valor(75%)}
+					&.val_70{ @include valor(70%)}
+					&.val_65{ @include valor(65%)}
+					&.val_60{ @include valor(60%)}
+					&.val_50{ @include valor(50%)}
+					&.val_40{ @include valor(40%)}
+					&.val_30{ @include valor(30%)}
+					&.val_20{ @include valor(20%)}
+					&.val_10{ @include valor(10%)}
+					&.val_0{ @include valor(0%)}
+				}
+			}
+		}
+	}
+}

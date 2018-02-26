@@ -1,0 +1,12 @@
+@import './main';
+@import './header_home';
+@import './about';
+@import './stack';
+@import './timeline';
+@import './projects';
+@import './footer';
+
+.home{
+	background: $main;
+	flex-wrap: wrap;
+}
