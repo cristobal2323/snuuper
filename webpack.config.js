@@ -58,8 +58,7 @@ module.exports = {
       		},
       		{ test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?name=[path][name].[ext]limit=10000&mimetype=application/font-woff" },
       		{ test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader", options:{ name:'[path][name].[ext]', publicPath: '/'}},
-      		{ test: /\.(gif|png|jpe?g|svg)$/i, loader: "file-loader",options:{name: '[path][name].[ext]',publicPath: '/'}},
-      		{ test: /\.json$/, exclude: /(node_modules)/, use: 'json-loader'}
+      		{ test: /\.(gif|png|jpe?g|svg|json)$/i, loader: "file-loader",options:{name: '[path][name].[ext]',publicPath: '/'}},
 		]
 	},
 
